@@ -1,0 +1,12 @@
+{
+  "heroTitle": "Title",
+  "heroDescription": "Description",
+  "heroCtaLabel": "Learn More",
+
+  "homeLabel": "Home",
+  "servicesLabel": "Services",
+  "aboutLabel": "About",
+  "benefitLabel": "Benefits",
+  "integrationLabel": "Integration",
+  "getQuoteLabel": "Get a quote"
+}
