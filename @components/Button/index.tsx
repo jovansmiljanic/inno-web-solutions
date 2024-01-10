@@ -34,6 +34,8 @@ const defaultStyle = css`
   transition: all 0.2s;
   border-radius: 5px;
   justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
   svg {
     margin-right: 7px;

@@ -1,12 +1,27 @@
 {
-  "heroTitle": "Title",
-  "heroDescription": "Description",
-  "heroCtaLabel": "Learn More",
+  "heroPreTitle": "FLY ON TOP",
+  "heroTitle": "Get on top of the web industry with Baza.",
+  "heroDescription": "Our web development agency will help you create an incredible website in no time and take your business to the next level. From layout to SEO. Perfection in everything.",
+  "heroCtaLabel": "Get started",
 
-  "homeLabel": "Početna",
-  "servicesLabel": "Usluge",
-  "aboutLabel": "O nama",
-  "benefitLabel": "Prednosti",
-  "integrationLabel": "Integracija",
-  "getQuoteLabel": "Zatražite ponudu"
+  "aboutUsPreTitle": "WHO WE ARE",
+  "aboutUsTitle": "About our agency",
+  "aboutUsDescription": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.",
+  "aboutUsCtaLabel": "Get started",
+
+  "aboutUslistTitle1": "900K",
+  "aboutUslistItem1": "Visitors on our site every mounth",
+
+  "aboutUslistTitle2": "98%",
+  "aboutUslistItem2": "Satisfaction rate from our awesome customers",
+
+  "aboutUslistTitle3": "68%",
+  "aboutUslistItem3": "Average increase in the conversion rate of our clients this month",
+
+  "navLabel1": "Home",
+  "navLabel2": "Who we are",
+  "navLabel3": "Our fields",
+  "navLabel4": "Our services",
+  "navLabel5": "Testimonitals",
+  "navLabel6": "Schedule a call"
 }

@@ -4,8 +4,9 @@
 import type { FC } from "react";
 
 // Local components
-import { Header } from "./Header";
 import { Footer } from "./Footer";
+
+export { Header } from "./Header";
 
 interface Layout {
   children: React.ReactNode;
@@ -14,8 +15,6 @@ interface Layout {
 export const Layout: FC<Layout> = ({ children }) => {
   return (
     <>
-      <Header />
-
       {children}
 
       <Footer />

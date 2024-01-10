@@ -21,10 +21,9 @@ const index: FC = () => {
   return (
     <Footer>
       <Main>
-        {/* <Logo src="/logo.png" alt="Medisoft" /> */}
-        <div>Logo</div>
+        <Logo src="/logo.png" alt="Inno web solutions" />
 
-        <Column>
+        {/* <Column>
           <Links>
             <Link href="#home">{t("homeLabel")}</Link>
             <Link href="#services">{t("servicesLabel")}</Link>
@@ -32,7 +31,7 @@ const index: FC = () => {
             <Link href="#our-benefits">{t("benefitLabel")}</Link>
             <Link href="#app-integration">{t("integrationLabel")}</Link>
           </Links>
-        </Column>
+        </Column> */}
       </Main>
     </Footer>
   );

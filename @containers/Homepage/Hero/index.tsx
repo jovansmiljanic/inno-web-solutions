@@ -4,7 +4,7 @@
 import type { FC } from "react";
 
 // Global component
-import { Button, Heading, Wave } from "@components";
+import { Button, Heading, Header } from "@components";
 
 // Vendors
 import { useTranslations } from "next-intl";
@@ -15,38 +15,52 @@ const index: FC = () => {
   const t = useTranslations();
 
   return (
-    <Wave>
+    <Wrapper>
+      <Header />
+
       <Hero id="#home">
         <ContentWrap>
-          <Title>{t("heroTitle")}</Title>
+          <Title>
+            Empower Your <br />
+            Digital Presence with
+            <br /> Inno Web Solutions
+          </Title>
 
           <Heading
             as="h6"
-            color="white"
             $padding={{
               xs: { top: 1, bottom: 1 },
               sm: { top: 1, bottom: 1 },
               md: { top: 2, bottom: 2 },
             }}
           >
-            {t("heroDescription")}
+            Elevate your business with our expert web and mobile development
+            services. At Inno Web Solution, we merge creativity with technology
+            to craft bespoke digital experiences. Whether it’s a vibrant website
+            or a dynamic app, our team is committed to turning your vision into
+            impactful digital solutions.
           </Heading>
 
-          <Button $variant="white" as="a" href="#our-services">
-            {t("heroCtaLabel")}
+          <Button $variant="textColorPrimary" as="a" href="#our-services">
+            Begin Your Digital Journey
           </Button>
         </ContentWrap>
 
         <MockupWrap>
-          {/* <Mockup src="/images/hero-mockup.webp" alt="Mockup" /> */}
-          Image
+          <Mockup src="/images/hero-mockup.webp" alt="Mockup" />
         </MockupWrap>
       </Hero>
-    </Wave>
+    </Wrapper>
   );
 };
 
 export { index as Hero };
+
+const Wrapper = styled.div`
+  background: url("/images/hero.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+`;
 
 const Hero = styled.div`
   max-width: 1340px;
@@ -60,8 +74,7 @@ const Hero = styled.div`
   align-items: center;
 
   ${({ theme: { breakpoints, spaces } }) => css`
-    padding: ${spaces[3]}px;
-    padding-top: 140px;
+    padding: ${spaces[10]}px ${spaces[3]}px;
 
     @media (max-width: ${breakpoints.md}px) {
       flex-direction: column;
@@ -71,11 +84,10 @@ const Hero = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 50px;
-  line-height: 1.2;
+  font-size: 52px;
+  line-height: 1.1;
 
   ${({ theme: { breakpoints, font, colors } }) => css`
-    color: ${colors.white};
     font-weight: ${font.weight.medium};
 
     @media (max-width: ${breakpoints.md}px) {

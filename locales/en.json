@@ -1,12 +1,13 @@
 {
-  "heroTitle": "Title",
-  "heroDescription": "Description",
-  "heroCtaLabel": "Learn More",
+  "heroPreTitle": "FLY ON TOP",
+  "heroTitle": "Get on top of the web industry with Baza.",
+  "heroDescription": "Our web development agency will help you create an incredible website in no time and take your business to the next level. From layout to SEO. Perfection in everything.",
+  "heroCtaLabel": "Get started",
 
-  "homeLabel": "Home",
-  "servicesLabel": "Services",
-  "aboutLabel": "About",
-  "benefitLabel": "Benefits",
-  "integrationLabel": "Integration",
-  "getQuoteLabel": "Get a quote"
+  "navLabel1": "Home",
+  "navLabel2": "Who we are",
+  "navLabel3": "Our fields",
+  "navLabel4": "Our services",
+  "navLabel5": "Testimonitals",
+  "navLabel6": "Schedule a call"
 }

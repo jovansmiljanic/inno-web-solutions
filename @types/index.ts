@@ -19,7 +19,23 @@ export type FontWeights = "light" | "regular" | "medium" | "semiBold" | "bold";
 
 export type Alignments = "left" | "center" | "right";
 
-export type Spaces = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+export type Spaces =
+  | 0
+  | 1
+  | 2
+  | 3
+  | 4
+  | 5
+  | 6
+  | 7
+  | 8
+  | 9
+  | 10
+  | 11
+  | 12
+  | 13
+  | 14
+  | 15;
 
 export type ColumnSize = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 

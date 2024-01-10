@@ -37,6 +37,11 @@ const commonSettings = {
     8: 60,
     9: 70,
     10: 80,
+    11: 90,
+    12: 100,
+    13: 110,
+    14: 120,
+    15: 130,
   },
 };
 
@@ -48,7 +53,7 @@ const defaultTheme: ThemeType = {
     white: "#FFFFFF",
     black: "#000000",
 
-    primary: "#a37cfc",
+    primary: "#155ce7",
     secondary: "#7A7DFF",
     success: "#37C864",
     danger: "#E04A5A",
@@ -56,7 +61,7 @@ const defaultTheme: ThemeType = {
 
     background: "#f8f5ff",
 
-    textColorPrimary: "#1e1e1e",
+    textColorPrimary: "#25262a",
     textColorSecondary: "#8E989F",
 
     gray: "#64748B",
@@ -81,7 +86,7 @@ const darkTheme: ThemeType = {
 
     background: "#f8f5ff",
 
-    textColorPrimary: "#1e1e1e",
+    textColorPrimary: "#25262a",
     textColorSecondary: "#8E989F",
 
     gray: "#64748B",

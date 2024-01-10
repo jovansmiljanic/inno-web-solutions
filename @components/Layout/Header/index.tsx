@@ -37,20 +37,24 @@ const index: FC = () => {
   return (
     <Header>
       <Link href="/">
-        {/* <Logo src="/logo.png" alt="" /> */}
-        Logo
+        <Logo src="/logo.png" alt="" />
       </Link>
 
       {!isTablet && (
         <Nav>
-          <Link href="#home">{t("homeLabel")}</Link>
-          <Link href="#our-services">{t("servicesLabel")}</Link>
-          <Link href="#about-us">{t("aboutLabel")}</Link>
-          <Link href="#our-benefits">{t("benefitLabel")}</Link>
-          <Link href="#app-integration">{t("integrationLabel")}</Link>
+          <Link href="#home">{t("navLabel1")}</Link>
+          <Link href="#our-services">{t("navLabel2")}</Link>
+          <Link href="#about-us">{t("navLabel3")}</Link>
+          <Link href="#our-benefits">{t("navLabel4")}</Link>
+          <Link href="#app-integration">{t("navLabel5")}</Link>
 
-          <Button $variant="primary" size="small" as="a" href="#pricing">
-            {t("getQuoteLabel")}
+          <Button
+            $variant="textColorPrimary"
+            size="small"
+            as="a"
+            href="#pricing"
+          >
+            {t("navLabel6")}
           </Button>
         </Nav>
       )}
@@ -136,5 +140,5 @@ const Nav = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 80px;
+  width: 200px;
 `;

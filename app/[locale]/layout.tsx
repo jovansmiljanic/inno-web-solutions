@@ -2,7 +2,7 @@
 import GlobalStyle from "@styles/globalStyles";
 
 // Fonts
-import { Comfortaa } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 // Providers
 import Providers from "providers";
@@ -14,8 +14,9 @@ import { NextIntlClientProvider, useLocale, useMessages } from "next-intl";
 import { notFound } from "next/navigation";
 import { Layout } from "@components";
 
-const comfortaa = Comfortaa({
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export default function RootLayout({
@@ -34,7 +35,7 @@ export default function RootLayout({
   const messages = useMessages();
 
   return (
-    <html lang={locale} className={comfortaa.className}>
+    <html lang={locale} className={poppins.className}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width" />
