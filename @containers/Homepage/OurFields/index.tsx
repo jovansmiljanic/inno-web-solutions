@@ -1,13 +1,15 @@
 // Core types
-import { Heading, Title } from "@components";
-import { useTranslations } from "next-intl";
 import type { FC } from "react";
 
+// Global components
+import { Heading, Title } from "@components";
+
 // Vendors
+import { useTranslations } from "next-intl";
 import styled, { css } from "styled-components";
 
 const Container = styled.div`
-  ${({ theme: { defaults, colors, font, ...theme } }) => css`
+  ${({ theme: { colors } }) => css`
     background-color: ${colors.white};
   `}
 `;
@@ -18,10 +20,9 @@ const Wrapper = styled.div`
 
   display: flex;
   flex-direction: column;
-
   text-align: center;
 
-  ${({ theme: { spaces, colors } }) => css`
+  ${({ theme: { spaces } }) => css`
     padding: ${spaces[10]}px ${spaces[3]}px;
   `}
 `;

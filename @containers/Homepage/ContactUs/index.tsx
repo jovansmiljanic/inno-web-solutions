@@ -13,6 +13,8 @@ import styled, { css } from "styled-components";
 
 // Local components
 import { Boxes } from "./Boxes";
+
+// GLobal styles
 import { Input, TextArea } from "@styles/Form";
 
 const Container = styled.div`

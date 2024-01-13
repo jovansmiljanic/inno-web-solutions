@@ -42,7 +42,11 @@ const index: FC = () => {
                 <Heading
                   as="h6"
                   color="textColorSecondary"
-                  $padding={{ md: { bottom: 2 } }}
+                  $padding={{
+                    xs: { bottom: 2 },
+                    sm: { bottom: 2 },
+                    md: { bottom: 2 },
+                  }}
                 >
                   "{testimonial.comment}"
                 </Heading>
@@ -118,7 +122,7 @@ const ContentWrap = styled.div`
 
   ${({ theme: { breakpoints, spaces } }) => css`
     @media (max-width: ${breakpoints.md}px) {
-      margin: ${spaces[3]}px 0;
+      margin-bottom: ${spaces[4]}px;
       order: 1;
     }
   `}

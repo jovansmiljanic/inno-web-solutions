@@ -98,7 +98,7 @@ const AboutUs = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  ${({ theme: { breakpoints, spaces } }) => css`
+  ${({ theme: { breakpoints } }) => css`
     @media (max-width: ${breakpoints.md}px) {
       flex-direction: column;
     }

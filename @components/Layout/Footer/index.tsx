@@ -4,7 +4,6 @@
 import type { FC } from "react";
 
 // Vendors
-import Link from "next/link";
 import { useTranslations } from "next-intl";
 import styled, { css } from "styled-components";
 
@@ -43,8 +42,9 @@ const index: FC = () => {
 export { index as Footer };
 
 const Footer = styled.div`
-  max-width: 1340px;
-  margin: auto;
+  ${({ theme: { colors } }) => css`
+    background-color: ${colors.white};
+  `}
 `;
 
 const Logo = styled.img`
@@ -52,13 +52,16 @@ const Logo = styled.img`
 `;
 
 const Main = styled.div`
+  max-width: 1340px;
+  margin: auto;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   ${({ theme: { spaces, breakpoints, colors } }) => css`
     padding: ${spaces[3]}px;
-    border-bottom: 1px solid ${colors.textColorSecondary};
+    border-top: 1px solid ${colors.textColorSecondary};
 
     a {
       color: ${colors.textColorSecondary};
@@ -79,13 +82,4 @@ const Column = styled.div`
       margin-bottom: ${spaces[3]}px;
     }
   `}
-`;
-
-const Links = styled.div`
-  display: flex;
-  justify-content: flex-end;
-
-  a {
-    margin: 0 10px;
-  }
 `;

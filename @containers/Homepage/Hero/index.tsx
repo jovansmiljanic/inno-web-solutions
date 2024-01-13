@@ -4,7 +4,7 @@
 import type { FC } from "react";
 
 // Global components
-import { Button, Heading, Header } from "@components";
+import { Button, Heading } from "@components";
 
 // Vendors
 import { useTranslations } from "next-intl";
@@ -16,8 +16,6 @@ const index: FC = () => {
 
   return (
     <Wrapper>
-      {/* <Header /> */}
-
       <Hero id="home">
         <ContentWrap>
           <Title>{t("heroTitle")}</Title>
@@ -70,7 +68,6 @@ const Hero = styled.div`
 
     @media (max-width: ${breakpoints.md}px) {
       flex-direction: column;
-      padding-top: ${spaces[6]}px;
     }
   `}
 `;
@@ -79,7 +76,7 @@ const Title = styled.h1`
   font-size: 52px;
   line-height: 1.1;
 
-  ${({ theme: { breakpoints, font, colors } }) => css`
+  ${({ theme: { breakpoints, font } }) => css`
     font-weight: ${font.weight.medium};
 
     @media (max-width: ${breakpoints.md}px) {
