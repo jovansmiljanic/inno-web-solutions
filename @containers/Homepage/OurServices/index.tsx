@@ -1,9 +1,11 @@
 // Core types
-import { Button, Heading, List, Title } from "@components";
-import { useTranslations } from "next-intl";
 import type { FC } from "react";
 
+// Global components
+import { Heading, List, Title } from "@components";
+
 // Vendors
+import { useTranslations } from "next-intl";
 import styled, { css } from "styled-components";
 
 const Container = styled.div`
@@ -28,7 +30,6 @@ const AboutUs = styled.div`
 
   ${({ theme: { breakpoints, spaces } }) => css`
     @media (max-width: ${breakpoints.md}px) {
-      padding: ${spaces[6]}px ${spaces[3]}px;
       flex-direction: column;
     }
   `}
@@ -58,38 +59,38 @@ const Mockup = styled.img`
   width: 80%;
 `;
 
-interface IOurServices {}
-
-const index: FC<IOurServices> = () => {
+const index: FC = () => {
   const t = useTranslations();
 
   return (
-    <Container>
-      <Wrapper id="about-us">
+    <Container id="our-services">
+      <Wrapper>
         <AboutUs>
           <ContentWrap>
             <Heading as="h5" color="primary">
-              OUR SERVICES
+              {t("ourServicesPreTitle")}
             </Heading>
 
-            <Title>Comprehensive Digital Solutions</Title>
+            <Title>{t("ourServicesTitle")}</Title>
 
             <Heading
               as="h6"
               color="textColorSecondary"
-              $padding={{ md: { bottom: 2 } }}
+              $padding={{
+                xs: { bottom: 2 },
+                sm: { bottom: 2 },
+                md: { bottom: 3 },
+              }}
             >
-              At Inno Web Solution, we offer a wide array of services tailored
-              to meet the evolving needs of the digital landscape. Our expert
-              team is equipped to handle every aspect of your digital journey,
-              ensuring top-notch quality and innovation at every step.
+              {t("ourServicesDescription")}
             </Heading>
 
             <List
               list={[
-                "Web Development: Custom, high-performance websites with engaging designs and user-friendly interfaces.",
-                "Mobile Apps: Innovative iOS and Android applications tailored to your business needs.",
-                "SEO & Digital Marketing: Boost your online presence and engagement with targeted SEO and marketing strategies.",
+                t("ourServicesListItem1"),
+                t("ourServicesListItem2"),
+                t("ourServicesListItem3"),
+                t("ourServicesListItem4"),
               ]}
             />
           </ContentWrap>

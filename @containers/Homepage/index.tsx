@@ -7,8 +7,10 @@ import type { FC } from "react";
 import { Hero } from "./Hero";
 import { AboutUs } from "./AboutUs";
 import { OurFields } from "./OurFields";
+import { BookCall } from "./BookCall";
 import { OurServices } from "./OurServices";
 import { Testimonials } from "./Testimonials";
+import { ContactUs } from "./ContactUs";
 
 const index: FC = () => {
   return (
@@ -16,8 +18,10 @@ const index: FC = () => {
       <Hero />
       <AboutUs />
       <OurFields />
+      <BookCall />
       <OurServices />
       <Testimonials />
+      <ContactUs />
     </>
   );
 };

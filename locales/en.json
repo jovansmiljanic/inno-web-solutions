@@ -1,8 +1,82 @@
 {
-  "heroPreTitle": "FLY ON TOP",
-  "heroTitle": "Get on top of the web industry with Baza.",
-  "heroDescription": "Our web development agency will help you create an incredible website in no time and take your business to the next level. From layout to SEO. Perfection in everything.",
-  "heroCtaLabel": "Get started",
+  "heroTitle": "Empower Your \n Digital Presence with Inno Web Solutions",
+  "heroDescription": "Inno Web Solutions is where innovation meets excellence in web development and design. Our experts specialize in creating stunning, interactive websites and apps, enhanced by strategic SEO. We turn your digital aspirations into impactful realities, ensuring your brand shines in the digital realm. Join us for a journey of digital transformation and success.",
+  "heroCtaLabel": "Learn More About Us",
+
+  "aboutUsPreTitle": "WHO WE ARE",
+  "aboutUsTitle": "Crafting Your Digital Future",
+  "aboutUsDescription": "At Inno Web Solutions, we are a dedicated team with a passion for digital innovation. Our core lies in blending cutting-edge technology with creative design to deliver exceptional web and app development. We pride ourselves on our strategic approach to SEO and personalized design solutions, tailoring each project to our clients' unique needs. Our journey is fueled by a commitment to excellence and a deep understanding of the digital landscape, aiming to build not just products, but lasting partnerships and impactful digital presences.",
+  "aboutUsCtaLabel": "Explore Our Expertise",
+
+  "aboutUsBox1Title": "20+",
+  "aboutUsBox1Description": "Each project, from sleek websites to user-friendly apps, reflects our dedication to quality and client satisfaction.",
+
+  "aboutUsBox2Title": "95%",
+  "aboutUsBox2Description": "Achieving a 95% client satisfaction rate, we're dedicated to exceeding expectations in every project.",
+
+  "aboutUsBox3Title": "250%",
+  "aboutUsBox3Description": "Clients experience an average of 250% revenue growth with our custom digital solutions, highlighting our impactful work.",
+
+  "ourFieldsPreTitle": "OUR FIELDS",
+  "ourFieldsTitle": "Expertise Across the Digital Spectrum",
+
+  "fieldOneTitle": "Frontend Development",
+  "fieldOneDescription": "We create responsive, user-friendly websites that look great on any device, ensuring a seamless and engaging user experience.",
+
+  "fieldTwoTitle": "Backend Development",
+  "fieldTwoDescription": "Our backend solutions are secure, scalable, and efficient, forming the reliable backbone for your digital platforms.",
+
+  "fieldThreeTitle": "SEO Optimization",
+  "fieldThreeDescription": "Through targeted SEO strategies, we enhance your site's visibility and ranking, driving increased organic traffic.",
+
+  "fieldFourTitle": "E-commerce Solutions",
+  "fieldFourDescription": "We specialize in creating user-friendly e-commerce platforms, focusing on seamless user experiences and secure transactions.",
+
+  "fieldFiveTitle": "Mobile Development",
+  "fieldFiveDescription": "We develop high-performance, intuitive mobile apps for iOS and Android, tailored to provide the best user experience.",
+
+  "fieldSixTitle": "Design",
+  "fieldSixDescription": "Our design team blends aesthetics with functionality, producing striking designs that communicate effectively and engage audiences.",
+
+  "bookCallTitle": "Let's Talk Solutions",
+  "bookCallDescription": "Ready to elevate your digital presence? \n Schedule a call with us to explore how we can transform your online strategy.",
+  "bookCallCtaLabel": "Schedule Your Call Now",
+
+  "ourServicesPreTitle": "OUR SERVICES",
+  "ourServicesTitle": "Tailored Digital Solutions for Every Need",
+  "ourServicesDescription": "At Inno Web Solutions, we understand that each client has unique needs. That's why we offer a wide range of digital services, each customizable to fit your specific requirements. Our team combines technical expertise with creative flair to deliver solutions that not only meet but exceed expectations. Whether you're looking to build from scratch, revamp an existing platform, or enhance your online presence, we've got you covered.",
+  "ourServicesListItem1": "Custom Web Development: Tailored websites combining aesthetics with functionality, meeting unique business needs.",
+  "ourServicesListItem2": "Mobile Application Development: User-centric mobile apps for iOS and Android, optimized for performance and ease of use.",
+  "ourServicesListItem3": "SEO and Digital Marketing: Effective SEO and marketing strategies to boost online presence and engagement.",
+  "ourServicesListItem4": "E-Commerce Solutions: Secure, user-friendly e-commerce platforms for an enhanced online shopping experience.",
+
+  "testimonialsPreTitle": "TESTIMONIALS",
+  "testimonialsTitle": "Client Success Stories",
+  "testimonialsDescription": "At Inno Web Solutions, we're proud of the strong relationships we've built with our clients. Their success stories are a testament to our commitment to excellence in digital solutions. Here’s what some of our esteemed clients have to say about their experience working with us.",
+
+  "testimonial1Name": "Dusan Antonijevic",
+  "testimonial1JobTitle": "Owner of Medisoft",
+  "testimonial1Description": "Inno Web Solutions was instrumental in the creation of our SAAS solution’s landing page. Their team’s expertise in design and user experience helped us effectively communicate our product's value, resulting in increased engagement and conversions.",
+
+  "testimonial2Name": "Nikola Novakovic",
+  "testimonial2JobTitle": "Owner of Easy Invoice",
+  "testimonial2Description": "The professionalism and technical skill of Inno Web Solutions transformed how we manage invoicing. Their development of our invoicing application streamlined our processes, enhancing both efficiency and user satisfaction.",
+
+  "testimonial3Name": "Lazar Plazinic",
+  "testimonial3JobTitle": "Owner of SmileFlex",
+  "testimonial3Description": "Working with Inno Web Solutions to develop our e-commerce site was a game changer. Their team delivered a seamless, user-friendly platform that significantly boosted our sales and customer reach. Their expertise in e-commerce is truly unparalleled.",
+
+  "footerCallUs": "Call us",
+  "footerEmailUs": "Email us",
+  "footerFindUs": "Find us",
+
+  "formTitle": "Write us a message",
+  "formFullNamePlaceholder": "Full name",
+  "formEmailPlaceholder": "Email",
+  "formMessagePlaceholder": "Message",
+  "formCtaLabel": "Send Message",
+
+  "copyRight": "Copyright ©{year} Inno Web Solutions. All rights reserved.",
 
   "navLabel1": "Home",
   "navLabel2": "Who we are",

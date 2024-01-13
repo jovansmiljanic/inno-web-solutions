@@ -13,9 +13,24 @@ import styled, { css } from "styled-components";
 const index: FC = () => {
   const t = useTranslations();
 
+  const aboutUs = [
+    {
+      title: t("aboutUsBox1Title"),
+      description: t("aboutUsBox1Description"),
+    },
+    {
+      title: t("aboutUsBox2Title"),
+      description: t("aboutUsBox2Description"),
+    },
+    {
+      title: t("aboutUsBox3Title"),
+      description: t("aboutUsBox3Description"),
+    },
+  ];
+
   return (
-    <Container>
-      <Wrapper id="about-us">
+    <Container id="about-us">
+      <Wrapper>
         <AboutUs>
           <MockupWrap>
             <Mockup src="/images/our-workflow.webp" alt="About us mockup" />
@@ -26,53 +41,35 @@ const index: FC = () => {
               {t("aboutUsPreTitle")}
             </Heading>
 
-            <Title>Crafting Your Digital Future</Title>
+            <Title>{t("aboutUsTitle")}</Title>
 
             <Heading
               as="h6"
               color="textColorSecondary"
-              $padding={{ md: { bottom: 2 } }}
+              $padding={{
+                xs: { bottom: 2 },
+                sm: { bottom: 2 },
+                md: { bottom: 2 },
+              }}
             >
-              Dive into a world where technology and creativity converge. Our
-              team, composed of expert web and mobile developers, is passionate
-              about turning bold ideas into digital realities. Driven by
-              innovation and a commitment to excellence, we specialize in
-              creating unique, effective solutions that elevate your online
-              presence. With us, each project is an opportunity to make a
-              meaningful impact, shaping digital experiences that resonate and
-              last.
+              {t("aboutUsDescription")}
             </Heading>
 
-            <Button $variant="textColorPrimary" as="a" href="#our-benefits">
-              Explore Our Expertise
+            <Button $variant="textColorPrimary" as="a" href="#our-fields">
+              {t("aboutUsCtaLabel")}
             </Button>
           </ContentWrap>
         </AboutUs>
 
         <List>
-          <Item>
-            <Title>500+</Title>
-            <Heading as="h6" $weight="semiBold">
-              Over 500 projects delivered, including state-of-the-art websites
-              and mobile apps, marking our success in digital innovation.
-            </Heading>
-          </Item>
-
-          <Item>
-            <Title>95%</Title>
-            <Heading as="h6" $weight="semiBold">
-              Achieving a 95% client satisfaction rate, we're dedicated to
-              exceeding expectations in every project.
-            </Heading>
-          </Item>
-
-          <Item>
-            <Title>250%</Title>
-            <Heading as="h6" $weight="semiBold">
-              Clients experience an average of 250% revenue growth with our
-              custom digital solutions, highlighting our impactful work.
-            </Heading>
-          </Item>
+          {aboutUs.map((item, index) => (
+            <Item key={index}>
+              <Title>{item.title}</Title>
+              <Heading as="h6" $weight="semiBold">
+                {item.description}
+              </Heading>
+            </Item>
+          ))}
         </List>
       </Wrapper>
     </Container>
@@ -103,7 +100,6 @@ const AboutUs = styled.div`
 
   ${({ theme: { breakpoints, spaces } }) => css`
     @media (max-width: ${breakpoints.md}px) {
-      padding: ${spaces[6]}px ${spaces[3]}px;
       flex-direction: column;
     }
   `}
@@ -139,8 +135,13 @@ const List = styled.div`
   justify-content: center;
   align-items: flex-start;
 
-  ${({ theme: { spaces } }) => css`
+  ${({ theme: { breakpoints, spaces } }) => css`
     padding-top: ${spaces[3]}px;
+
+    @media (max-width: ${breakpoints.md}px) {
+      padding-top: 0;
+      flex-direction: column;
+    }
   `}
 `;
 

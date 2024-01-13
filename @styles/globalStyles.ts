@@ -27,6 +27,10 @@ const GlobalStyle = createGlobalStyle<{ theme?: ThemeType }>`
     vertical-align: baseline;
     scroll-behavior: smooth;
   }
+  
+  *{
+    white-space: pre-line;
+  }
 
   button {
     -webkit-appearance: none;

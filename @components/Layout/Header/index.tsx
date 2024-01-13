@@ -43,16 +43,16 @@ const index: FC = () => {
       {!isTablet && (
         <Nav>
           <Link href="#home">{t("navLabel1")}</Link>
-          <Link href="#our-services">{t("navLabel2")}</Link>
-          <Link href="#about-us">{t("navLabel3")}</Link>
-          <Link href="#our-benefits">{t("navLabel4")}</Link>
-          <Link href="#app-integration">{t("navLabel5")}</Link>
+          <Link href="#about-us">{t("navLabel2")}</Link>
+          <Link href="#our-fields">{t("navLabel3")}</Link>
+          <Link href="#our-services">{t("navLabel4")}</Link>
+          <Link href="#testimonials">{t("navLabel5")}</Link>
 
           <Button
             $variant="textColorPrimary"
             size="small"
             as="a"
-            href="#pricing"
+            href="#book-a-call"
           >
             {t("navLabel6")}
           </Button>
@@ -89,7 +89,7 @@ const Toggler = styled.div`
   width: 40px;
   height: 25px;
   right: 20px;
-  top: 49px;
+  top: 27px;
   cursor: pointer;
 
   &:before {
@@ -141,4 +141,10 @@ const Nav = styled.div`
 
 const Logo = styled.img`
   width: 200px;
+
+  ${({ theme: { breakpoints } }) => css`
+    @media (max-width: ${breakpoints.md}px) {
+      width: 160px;
+    }
+  `}
 `;

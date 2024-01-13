@@ -4,7 +4,7 @@ import { localePrefix, locales } from "./navigation";
 export default createMiddleware({
   locales,
   localePrefix,
-  defaultLocale: "sr",
+  defaultLocale: "en",
 });
 
 // only applies this middleware to files in the app directory

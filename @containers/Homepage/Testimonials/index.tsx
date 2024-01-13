@@ -1,40 +1,40 @@
 // Core types
-import { Heading, Title } from "@components";
 import type { FC } from "react";
 
+// Global components
+import { Heading, Title } from "@components";
+
 // Vendors
+import { useTranslations } from "next-intl";
 import styled, { css } from "styled-components";
 
-interface ITestimonials {}
+const index: FC = () => {
+  const t = useTranslations();
 
-const index: FC<ITestimonials> = () => {
   const testimonials = [
     {
-      name: "Dusan Antonijevic",
-      designation: "Owner of Medisoft",
+      name: t("testimonial1Name"),
+      designation: t("testimonial1JobTitle"),
+      comment: t("testimonial1Description"),
       image: "/images/dusan-antonijevic.webp",
-      comment:
-        "Partnering with InnoWeb Solutions for our marketing site was transformative. Their creative and technical skills boosted our online presence, exceeding our expectations.",
     },
     {
-      name: "Nikola Novakovic",
-      designation: "Owner of Easy Invoice",
-      image: "/images/jovan-smiljanic.webp",
-      comment:
-        "InnoWeb Solutions efficiently developed Invoice Easy, meeting our needs with an intuitive and highly praised app that revolutionized our operations.",
+      name: t("testimonial2Name"),
+      designation: t("testimonial2JobTitle"),
+      comment: t("testimonial2Description"),
+      image: "/images/nikola-novakovic.webp",
     },
     {
-      name: "Lazar Plazinic",
-      designation: "Owner of SmileFlex",
+      name: t("testimonial3Name"),
+      designation: t("testimonial3JobTitle"),
+      comment: t("testimonial3Description"),
       image: "/images/lazar-plazinic.webp",
-      comment:
-        "The e-commerce site by InnoWeb Solutions for our jawline products is a hit. They delivered a beautiful, user-friendly store, significantly increasing our sales.",
     },
   ];
 
   return (
-    <Container>
-      <Wrapper id="about-us">
+    <Container id="testimonials">
+      <Wrapper>
         <AboutUs>
           <Testimonials>
             {testimonials.map((testimonial, index) => (
@@ -66,19 +66,17 @@ const index: FC<ITestimonials> = () => {
 
           <ContentWrap>
             <Heading as="h5" color="primary">
-              TESTIMONIALS
+              {t("testimonialsPreTitle")}
             </Heading>
 
-            <Title>Client Success Stories</Title>
+            <Title>{t("testimonialsTitle")}</Title>
 
             <Heading
               as="h6"
               color="textColorSecondary"
               $padding={{ md: { bottom: 2 } }}
             >
-              Our clients’ satisfaction speaks volumes about our commitment to
-              delivering excellence. Here’s what they have to say about
-              partnering with us on their digital projects.
+              {t("testimonialsDescription")}
             </Heading>
           </ContentWrap>
         </AboutUs>
@@ -90,8 +88,7 @@ const index: FC<ITestimonials> = () => {
 export { index as Testimonials };
 
 const Container = styled.div`
-  ${({ theme: { colors, spaces } }) => css`
-    background-color: ${colors.white};
+  ${({ theme: { spaces } }) => css`
     padding: ${spaces[10]}px ${spaces[3]}px;
   `}
 `;
@@ -109,9 +106,8 @@ const AboutUs = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  ${({ theme: { breakpoints, spaces } }) => css`
+  ${({ theme: { breakpoints } }) => css`
     @media (max-width: ${breakpoints.md}px) {
-      padding: ${spaces[6]}px ${spaces[3]}px;
       flex-direction: column;
     }
   `}
@@ -122,7 +118,7 @@ const ContentWrap = styled.div`
 
   ${({ theme: { breakpoints, spaces } }) => css`
     @media (max-width: ${breakpoints.md}px) {
-      margin-bottom: ${spaces[3]}px;
+      margin: ${spaces[3]}px 0;
     }
   `}
 `;
@@ -131,8 +127,6 @@ const Testimonials = styled.div`
   display: flex;
   flex-direction: column;
   flex: 0 0 50%;
-
-  ${({ theme: { defaults, colors, font, ...theme } }) => css``}
 `;
 
 const Testimonial = styled.div`
@@ -150,24 +144,26 @@ const Testimonial = styled.div`
     margin-bottom: 30px;
   }
 
-  ${({ theme: { defaults, colors, font, ...theme } }) => css``}
+  ${({ theme: { colors, breakpoints } }) => css`
+    background-color: ${colors.white};
+
+    @media (max-width: ${breakpoints.md}px) {
+      &:nth-child(2) {
+        transform: translateX(0);
+      }
+    }
+  `}
 `;
 
 const Icon = styled.img`
   width: 50px;
   margin-right: 10px;
   border-radius: 50%;
-
-  ${({ theme: { defaults, colors, font, ...theme } }) => css``}
 `;
 
 const Wrap = styled.div`
   display: flex;
   align-items: center;
-
-  ${({ theme: { defaults, colors, font, ...theme } }) => css``}
 `;
 
-const NameWrap = styled.div`
-  ${({ theme: { defaults, colors, font, ...theme } }) => css``}
-`;
+const NameWrap = styled.div``;

@@ -3,13 +3,13 @@
 // Core types
 import type { FC } from "react";
 
-// Global components
-import { Heading } from "@components";
-
 // Vendors
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import styled, { css } from "styled-components";
+
+// Global components
+import { Heading } from "@components";
 
 const index: FC = () => {
   // Translations
@@ -21,17 +21,30 @@ const index: FC = () => {
   return (
     <Footer>
       <Main>
-        <Logo src="/logo.png" alt="Inno web solutions" />
+        <Column>
+          <Logo src="/logo.png" alt="Inno web solutions" />
+        </Column>
 
-        {/* <Column>
+        <Column>
+          <Heading
+            as="p"
+            $weight="regular"
+            color="textColorSecondary"
+            $textAlign={{ xs: "center", sm: "center", md: "center" }}
+          >
+            {t("copyRight", { year })}
+          </Heading>
+        </Column>
+
+        <Column>
           <Links>
-            <Link href="#home">{t("homeLabel")}</Link>
-            <Link href="#services">{t("servicesLabel")}</Link>
-            <Link href="#about-us">{t("aboutLabel")}</Link>
-            <Link href="#our-benefits">{t("benefitLabel")}</Link>
-            <Link href="#app-integration">{t("integrationLabel")}</Link>
+            <Link href="#home">{t("navLabel1")}</Link>
+            <Link href="#services">{t("navLabel2")}</Link>
+            <Link href="#about-us">{t("navLabel3")}</Link>
+            <Link href="#our-benefits">{t("navLabel4")}</Link>
+            <Link href="#app-integration">{t("navLabel5")}</Link>
           </Links>
-        </Column> */}
+        </Column>
       </Main>
     </Footer>
   );
@@ -45,19 +58,13 @@ const Footer = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 100px;
-
-  ${({ theme: { breakpoints } }) => css`
-    @media (max-width: ${breakpoints.md}px) {
-      margin-bottom: 20px;
-    }
-  `}
+  width: 170px;
 `;
 
 const Main = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 
   ${({ theme: { spaces, breakpoints, colors } }) => css`
     padding: ${spaces[3]}px;
@@ -75,7 +82,7 @@ const Main = styled.div`
 `;
 
 const Column = styled.div`
-  flex: 0 0 25%;
+  flex: 0 0 30%;
 
   ${({ theme: { breakpoints, spaces } }) => css`
     @media (max-width: ${breakpoints.md}px) {
@@ -86,11 +93,9 @@ const Column = styled.div`
 
 const Links = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
 
-  ${({ theme: { colors } }) => css`
-    a {
-      padding: 7px 0;
-    }
-  `}
+  a {
+    margin: 0 10px;
+  }
 `;

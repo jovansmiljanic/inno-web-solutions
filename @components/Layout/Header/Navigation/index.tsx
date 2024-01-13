@@ -31,15 +31,15 @@ const index: FC<Navigation> = ({ toggled }) => {
       variants={menuVariants}
     >
       <MobileHeader>
-        {/* <Logo src="/logo.png" alt="Logo" /> */}
-        <div>Logo</div>
+        <Logo src="/logo.png" alt="Logo" />
 
         <Links>
-          <Link href="#home">{t("homeLabel")}</Link>
-          <Link href="#our-services">{t("servicesLabel")}</Link>
-          <Link href="#about-us">{t("aboutLabel")}</Link>
-          <Link href="#our-benefits">{t("benefitLabel")}</Link>
-          <Link href="#app-integration">{t("integrationLabel")}</Link>
+          <Link href="#home">{t("navLabel1")}</Link>
+          <Link href="#our-services">{t("navLabel2")}</Link>
+          <Link href="#about-us">{t("navLabel3")}</Link>
+          <Link href="#our-benefits">{t("navLabel4")}</Link>
+          <Link href="#our-benefits">{t("navLabel5")}</Link>
+          <Link href="#app-integration">{t("navLabel6")}</Link>
         </Links>
       </MobileHeader>
     </Navigation>
@@ -94,5 +94,5 @@ const Links = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 80px;
+  width: 160px;
 `;

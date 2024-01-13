@@ -59,7 +59,7 @@ const defaultTheme: ThemeType = {
     danger: "#E04A5A",
     warning: "#FFA726",
 
-    background: "#f8f5ff",
+    background: "#f8fbff",
 
     textColorPrimary: "#25262a",
     textColorSecondary: "#8E989F",
@@ -84,7 +84,7 @@ const darkTheme: ThemeType = {
     danger: "#E04A5A",
     warning: "#FFA726",
 
-    background: "#f8f5ff",
+    background: "#f8fbff",
 
     textColorPrimary: "#25262a",
     textColorSecondary: "#8E989F",

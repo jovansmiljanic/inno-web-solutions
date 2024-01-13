@@ -1,9 +1,16 @@
 // Core types
 import { Heading, Title } from "@components";
+import { useTranslations } from "next-intl";
 import type { FC } from "react";
 
 // Vendors
 import styled, { css } from "styled-components";
+
+const Container = styled.div`
+  ${({ theme: { defaults, colors, font, ...theme } }) => css`
+    background-color: ${colors.white};
+  `}
+`;
 
 const Wrapper = styled.div`
   max-width: 1140px;
@@ -14,7 +21,7 @@ const Wrapper = styled.div`
 
   text-align: center;
 
-  ${({ theme: { spaces } }) => css`
+  ${({ theme: { spaces, colors } }) => css`
     padding: ${spaces[10]}px ${spaces[3]}px;
   `}
 `;
@@ -24,8 +31,6 @@ const FieldsWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-
-  ${({ theme: { defaults, colors, font, ...theme } }) => css``}
 `;
 
 const Field = styled.div`
@@ -36,92 +41,93 @@ const Field = styled.div`
   border-radius: 10px;
   margin-bottom: 30px;
 
-  ${({ theme: { colors } }) => css`
+  ${({ theme: { colors, breakpoints } }) => css`
     background-color: ${colors.white};
 
     &:hover {
       scale: 1.05;
       box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    @media (max-width: ${breakpoints.md}px) {
+      flex: 0 0 100%;
     }
   `}
 `;
 
 const Icon = styled.img`
   width: 50px;
-  ${({ theme: { defaults, colors, font, ...theme } }) => css``}
 `;
 
-interface IOurFields {}
+const index: FC = () => {
+  const t = useTranslations();
 
-const index: FC<IOurFields> = () => {
   const fields = [
     {
-      title: "Frontend Development",
-      description:
-        "Creating visually appealing, responsive user interfaces with the latest HTML, CSS, and JavaScript technologies for an outstanding user experience.",
+      title: t("fieldOneTitle"),
+      description: t("fieldOneDescription"),
       icon: "/images/frontend.webp",
     },
     {
-      title: "Backend Development",
-      description:
-        "Delivering secure, scalable backend solutions with server-side technologies to power your applications efficiently.",
+      title: t("fieldTwoTitle"),
+      description: t("fieldTwoDescription"),
       icon: "/images/backend.webp",
     },
     {
-      title: "SEO Optimization",
-      description:
-        "Enhancing online visibility with advanced SEO strategies to improve your website's ranking and increase traffic.",
+      title: t("fieldThreeTitle"),
+      description: t("fieldThreeDescription"),
       icon: "/images/seo.webp",
     },
     {
-      title: "E-commerce Solutions",
-      description:
-        "Building custom e-commerce platforms, handling everything from storefronts to payment processing to convert visitors to customers.",
+      title: t("fieldFourTitle"),
+      description: t("fieldFourDescription"),
       icon: "/images/data-sience.webp",
     },
     {
-      title: "Mobile Development",
-      description:
-        "Developing high-performance mobile apps for iOS and Android, focused on usability and a seamless user experience.",
+      title: t("fieldFiveTitle"),
+      description: t("fieldFiveDescription"),
       icon: "/images/mobile-dev.webp",
     },
     {
-      title: "Cloud Services",
-      description:
-        "Providing reliable cloud solutions for hosting, storage, and data management, ensuring scalability and security.",
+      title: t("fieldSixTitle"),
+      description: t("fieldSixDescription"),
       icon: "/images/project-menagment.webp",
     },
   ];
 
   return (
-    <Wrapper>
-      <Heading as="h5" color="primary">
-        OUR FIELDS
-      </Heading>
+    <Container>
+      <Wrapper id="our-fields">
+        <Heading as="h5" color="primary">
+          {t("ourFieldsPreTitle")}
+        </Heading>
 
-      <Title>Expertise Across the Digital Spectrum</Title>
-      <FieldsWrap>
-        {fields.map((field, i) => (
-          <Field key={i}>
-            <Icon src={field.icon} alt={field.title} />
+        <Title>{t("ourFieldsTitle")}</Title>
 
-            <Heading
-              as="h5"
-              $weight="bold"
-              $padding={{
-                xs: { top: 1, bottom: 1 },
-                sm: { top: 1, bottom: 1 },
-                md: { top: 1, bottom: 1 },
-              }}
-            >
-              {field.title}
-            </Heading>
+        <FieldsWrap>
+          {fields.map((field, i) => (
+            <Field key={i}>
+              <Icon src={field.icon} alt={field.title} />
 
-            <Heading as="h6">{field.description}</Heading>
-          </Field>
-        ))}
-      </FieldsWrap>
-    </Wrapper>
+              <Heading
+                as="h5"
+                $weight="bold"
+                $padding={{
+                  xs: { top: 1, bottom: 1 },
+                  sm: { top: 1, bottom: 1 },
+                  md: { top: 1, bottom: 1 },
+                }}
+              >
+                {field.title}
+              </Heading>
+
+              <Heading as="h6">{field.description}</Heading>
+            </Field>
+          ))}
+        </FieldsWrap>
+      </Wrapper>
+    </Container>
   );
 };
 

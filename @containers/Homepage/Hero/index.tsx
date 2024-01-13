@@ -3,7 +3,7 @@
 // Core types
 import type { FC } from "react";
 
-// Global component
+// Global components
 import { Button, Heading, Header } from "@components";
 
 // Vendors
@@ -18,31 +18,23 @@ const index: FC = () => {
     <Wrapper>
       <Header />
 
-      <Hero id="#home">
+      <Hero id="home">
         <ContentWrap>
-          <Title>
-            Empower Your <br />
-            Digital Presence with
-            <br /> Inno Web Solutions
-          </Title>
+          <Title>{t("heroTitle")}</Title>
 
           <Heading
             as="h6"
             $padding={{
-              xs: { top: 1, bottom: 1 },
-              sm: { top: 1, bottom: 1 },
+              xs: { top: 1, bottom: 2 },
+              sm: { top: 1, bottom: 2 },
               md: { top: 2, bottom: 2 },
             }}
           >
-            Elevate your business with our expert web and mobile development
-            services. At Inno Web Solution, we merge creativity with technology
-            to craft bespoke digital experiences. Whether it’s a vibrant website
-            or a dynamic app, our team is committed to turning your vision into
-            impactful digital solutions.
+            {t("heroDescription")}
           </Heading>
 
-          <Button $variant="textColorPrimary" as="a" href="#our-services">
-            Begin Your Digital Journey
+          <Button $variant="textColorPrimary" as="a" href="#about-us">
+            {t("heroCtaLabel")}
           </Button>
         </ContentWrap>
 
@@ -109,6 +101,12 @@ const ContentWrap = styled.div`
 
 const MockupWrap = styled.div`
   flex: 0 0 50%;
+
+  ${({ theme: { breakpoints, spaces } }) => css`
+    @media (max-width: ${breakpoints.md}px) {
+      margin-top: ${spaces[5]}px;
+    }
+  `}
 `;
 
 const Mockup = styled.img`

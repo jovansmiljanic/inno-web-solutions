@@ -1,27 +1,87 @@
 {
-  "heroPreTitle": "FLY ON TOP",
-  "heroTitle": "Get on top of the web industry with Baza.",
-  "heroDescription": "Our web development agency will help you create an incredible website in no time and take your business to the next level. From layout to SEO. Perfection in everything.",
-  "heroCtaLabel": "Get started",
+  "heroTitle": "Osnažite svoje digitalno prisustvo sa Inno Web Solutions",
+  "heroDescription": "Inno Web Solutions je mesto gde se inovacija susreće sa izvrsnošću u web razvoju i dizajnu. Naši stručnjaci su specijalizovani za kreiranje zapanjujućih, interaktivnih veb stranica i aplikacija, unapređenih strateškim SEO. Pretvaramo vaše digitalne aspiracije u uticajne realnosti, osiguravajući da vaš brend sija u digitalnom svetu. Pridružite nam se na putu digitalne transformacije i uspeha.",
+  "heroCtaLabel": "Saznajte više o nama",
 
-  "aboutUsPreTitle": "WHO WE ARE",
-  "aboutUsTitle": "About our agency",
-  "aboutUsDescription": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.",
-  "aboutUsCtaLabel": "Get started",
+  "aboutUsPreTitle": "KO SMO MI",
+  "aboutUsTitle": "Oblikujemo vašu digitalnu budućnost",
+  "aboutUsDescription": "U Inno Web Solutions, mi smo posvećeni tim sa strašću za digitalnu inovaciju. Naša srž leži u kombinovanju najsavremenije tehnologije sa kreativnim dizajnom kako bismo isporučili izuzetan razvoj weba i aplikacija. Ponosimo se našim strateškim pristupom SEO-u i personalizovanim rešenjima dizajna, prilagođavajući svaki projekat jedinstvenim potrebama naših klijenata. Naš put je vođen posvećenošću izvrsnosti i dubokim razumevanjem digitalnog pejzaža, sa ciljem da izgradimo ne samo proizvode, već i trajna partnerstva i uticajna digitalna prisustva.",
+  "aboutUsCtaLabel": "Istražite našu stručnost",
 
-  "aboutUslistTitle1": "900K",
-  "aboutUslistItem1": "Visitors on our site every mounth",
+  "aboutUsBox1Title": "20+",
+  "aboutUsBox1Description": "Svaki projekat, od elegantnih veb stranica do korisnički prijateljskih aplikacija, odražava našu posvećenost kvalitetu i zadovoljstvu klijenata.",
 
-  "aboutUslistTitle2": "98%",
-  "aboutUslistItem2": "Satisfaction rate from our awesome customers",
+  "aboutUsBox2Title": "95%",
+  "aboutUsBox2Description": "Postizanje stope zadovoljstva klijenata od 95%, posvećeni smo premašivanju očekivanja u svakom projektu.",
 
-  "aboutUslistTitle3": "68%",
-  "aboutUslistItem3": "Average increase in the conversion rate of our clients this month",
+  "aboutUsBox3Title": "250%",
+  "aboutUsBox3Description": "Klijenti doživljavaju prosečan rast prihoda od 250% sa našim prilagođenim digitalnim rešenjima, naglašavajući naš uticajan rad.",
 
-  "navLabel1": "Home",
-  "navLabel2": "Who we are",
-  "navLabel3": "Our fields",
-  "navLabel4": "Our services",
-  "navLabel5": "Testimonitals",
-  "navLabel6": "Schedule a call"
+  "ourFieldsPreTitle": "NAŠA PODRUČJA",
+  "ourFieldsTitle": "Ekspertiza širom digitalnog spektra",
+
+  "fieldOneTitle": "Razvoj frontenda",
+  "fieldOneDescription": "Kreiramo odzivne, korisnički prijateljske veb stranice koje izgledaju odlično na svakom uređaju, obezbeđujući besprekoran i angažovan korisnički doživljaj.",
+
+  "fieldTwoTitle": "Razvoj backenda",
+  "fieldTwoDescription": "Naša backend rešenja su sigurna, skalabilna i efikasna, formirajući pouzdanu osnovu za vaše digitalne platforme.",
+
+  "fieldThreeTitle": "SEO optimizacija",
+  "fieldThreeDescription": "Kroz ciljane SEO strategije, poboljšavamo vidljivost i rangiranje vašeg sajta, povećavajući organski saobraćaj.",
+
+  "fieldFourTitle": "E-commerce rešenja",
+  "fieldFourDescription": "Specijalizovani smo za kreiranje korisnički prijateljskih e-commerce platformi, fokusirajući se na besprekorna korisnička iskustva i sigurne transakcije.",
+
+  "fieldFiveTitle": "Razvoj mobilnih aplikacija",
+  "fieldFiveDescription": "Razvijamo visokoučinkovite, intuitivne mobilne aplikacije za iOS i Android, prilagođene da pruže najbolje korisničko iskustvo.",
+
+  "fieldSixTitle": "Dizajn",
+  "fieldSixDescription": "Naš tim za dizajn kombinuje estetiku sa funkcionalnošću, stvarajući izuzetne dizajne koji efikasno komuniciraju i angažuju publiku.",
+
+  "bookCallTitle": "Hajde da razgovaramo o rešenjima",
+  "bookCallDescription": "Spremni da unapredite svoje digitalno prisustvo? \n Zakazite poziv sa nama kako biste istražili kako možemo transformisati vašu online strategiju.",
+  "bookCallCtaLabel": "Zakažite vaš poziv odmah",
+
+  "ourServicesPreTitle": "NAŠE USLUGE",
+  "ourServicesTitle": "Prilagođena digitalna rešenja za svaku potrebu",
+  "ourServicesDescription": "U Inno Web Solutions, razumemo da svaki klijent ima jedinstvene potrebe. Zato nudimo širok spektar digitalnih usluga, svaku prilagođenu da odgovara vašim specifičnim zahtevima. Naš tim kombinuje tehničku stručnost sa kreativnom maštovitošću da pruži rešenja koja ne samo da ispunjavaju, već i nadmašuju očekivanja. Bilo da želite da gradite od nule, preuredite postojeću platformu ili poboljšate svoje online prisustvo, mi smo tu da vam pomognemo.",
+  "ourServicesListItem1": "Prilagođeni web razvoj: Prilagođene veb stranice koje kombinuju estetiku sa funkcionalnošću, ispunjavajući jedinstvene poslovne potrebe.",
+  "ourServicesListItem2": "Razvoj mobilnih aplikacija: Korisničko orijentisane mobilne aplikacije za iOS i Android, optimizovane za performanse i jednostavnost upotrebe.",
+  "ourServicesListItem3": "SEO i digitalni marketing: Efikasne SEO i marketinške strategije za povećanje online prisustva i angažovanja.",
+  "ourServicesListItem4": "E-commerce rešenja: Sigurne, korisnički prijateljske e-commerce platforme za unapređeno online iskustvo kupovine.",
+
+  "testimonialsPreTitle": "PREPORUKE",
+  "testimonialsTitle": "Priče o uspehu klijenata",
+  "testimonialsDescription": "U Inno Web Solutions, ponosimo se na čvrstim odnosima koje smo izgradili sa našim klijentima. Njihove priče o uspehu su svedočanstvo naše posvećenosti izvrsnosti u digitalnim rešenjima. Evo šta neki od naših cenjenih klijenata kažu o svom iskustvu saradnje sa nama.",
+
+  "testimonial1Name": "Dušan Antonijević",
+  "testimonial1JobTitle": "Vlasnik Medisofta",
+  "testimonial1Description": "Inno Web Solutions je bio ključan u kreiranju naše SAAS rešenja landing stranice. Njihova stručnost u dizajnu i korisničkom iskustvu nam je pomogla da efikasno komuniciramo vrednost našeg proizvoda, rezultirajući povećanim angažovanjem i konverzijama.",
+
+  "testimonial2Name": "Nikola Novaković",
+  "testimonial2JobTitle": "Vlasnik Easy Invoice",
+  "testimonial2Description": "Profesionalizam i tehnička veština Inno Web Solutions-a transformisali su način na koji upravljamo fakturisanjem. Njihov razvoj naše aplikacije za fakturisanje pojednostavio je naše procese, povećavajući efikasnost i zadovoljstvo korisnika.",
+
+  "testimonial3Name": "Lazar Plazinić",
+  "testimonial3JobTitle": "Vlasnik SmileFlex",
+  "testimonial3Description": "Rad sa Inno Web Solutions na razvoju naše e-commerce stranice bio je prekretnica. Njihov tim je isporučio besprekoran, korisnički prijateljski platform koji je značajno povećao naše prodaje i doseg kupaca. Njihova stručnost u e-commerce-u je zaista bez premca.",
+
+  "footerCallUs": "Pozovite nas",
+  "footerEmailUs": "Pišite nam",
+  "footerFindUs": "Pronađite nas",
+
+  "formTitle": "Pišite nam poruku",
+  "formFullNamePlaceholder": "Puno ime",
+  "formEmailPlaceholder": "E-mail",
+  "formMessagePlaceholder": "Poruka",
+  "formCtaLabel": "Pošalji poruku",
+
+  "copyRight": "Sva prava zadržana ©{year} Inno Web Solutions.",
+
+  "navLabel1": "Početna",
+  "navLabel2": "Ko smo mi",
+  "navLabel3": "Naša područja",
+  "navLabel4": "Naše usluge",
+  "navLabel5": "Preporuke",
+  "navLabel6": "Zakažite poziv"
 }

@@ -1,13 +1,87 @@
 {
-  "heroPreTitle": "FLY ON TOP",
-  "heroTitle": "Get on top of the web industry with Baza.",
-  "heroDescription": "Our web development agency will help you create an incredible website in no time and take your business to the next level. From layout to SEO. Perfection in everything.",
-  "heroCtaLabel": "Get started",
+  "heroTitle": "Okrepite svojo {lineBreak} digitalno prisotnost z Inno Web rešitvami",
+  "heroDescription": "Inno Web rešitve so križišče inovacij in odličnosti v spletnem razvoju in oblikovanju. Naši strokovnjaki so specializirani za ustvarjanje osupljivih, interaktivnih spletnih strani in aplikacij, podprtih s strategičnim SEO. Vaše digitalne ambicije spremenimo v vplivne realnosti, zagotavljamo, da vaša blagovna znamka sije v digitalnem svetu. Pridružite se nam na poti digitalne preobrazbe in uspeha.",
+  "heroCtaLabel": "Spoznajte več o nas",
 
-  "navLabel1": "Home",
-  "navLabel2": "Who we are",
-  "navLabel3": "Our fields",
-  "navLabel4": "Our services",
-  "navLabel5": "Testimonitals",
-  "navLabel6": "Schedule a call"
+  "aboutUsPreTitle": "KDO SMO",
+  "aboutUsTitle": "Ustvarjamo vašo digitalno prihodnost",
+  "aboutUsDescription": "V Inno Web rešitvah smo predana ekipa z strastjo do digitalnih inovacij. Naše jedro je združevanje najsodobnejše tehnologije z ustvarjalnim oblikovanjem za izjemno razvoj spletnih strani in aplikacij. Ponosni smo na naš strateški pristop k SEO in personalizirane oblikovalske rešitve, prilagojene edinstvenim potrebam naših strank. Našo pot žene zavezanost odličnosti in globoko razumevanje digitalne krajine, z namenom graditi ne le izdelke, ampak trajna partnerstva in vplivne digitalne prisotnosti.",
+  "aboutUsCtaLabel": "Raziskujte našo strokovnost",
+
+  "aboutUsBox1Title": "20+",
+  "aboutUsBox1Description": "Vsak projekt, od elegantnih spletnih strani do uporabniku prijaznih aplikacij, odraža našo predanost kakovosti in zadovoljstvu strank.",
+
+  "aboutUsBox2Title": "95%",
+  "aboutUsBox2Description": "S 95-odstotno stopnjo zadovoljstva strank smo zavezani preseganju pričakovanj v vsakem projektu.",
+
+  "aboutUsBox3Title": "250%",
+  "aboutUsBox3Description": "Stranke doživljajo v povprečju 250-odstotno rast prihodkov z našimi prilagojenimi digitalnimi rešitvami, kar poudarja naš vpliven delo.",
+
+  "ourFieldsPreTitle": "NAŠA PODROČJA",
+  "ourFieldsTitle": "Strokovnost čez celoten digitalni spekter",
+
+  "fieldOneTitle": "Frontend razvoj",
+  "fieldOneDescription": "Ustvarjamo odzivne, uporabniku prijazne spletne strani, ki so odlično videti na kateri koli napravi, zagotavljajoč nemoteno in privlačno uporabniško izkušnjo.",
+
+  "fieldTwoTitle": "Backend razvoj",
+  "fieldTwoDescription": "Naše backend rešitve so varne, skalabilne in učinkovite, predstavljajo zanesljivo hrbtenico vaših digitalnih platform.",
+
+  "fieldThreeTitle": "SEO optimizacija",
+  "fieldThreeDescription": "Z usmerjenimi SEO strategijami izboljšamo vidljivost in uvrstitev vaše spletne strani, kar povečuje organski promet.",
+
+  "fieldFourTitle": "E-trgovinske rešitve",
+  "fieldFourDescription": "Specializirani smo za ustvarjanje uporabniku prijaznih e-trgovinskih platform, s poudarkom na nemotenih uporabniških izkušnjah in varnih transakcijah.",
+
+  "fieldFiveTitle": "Razvoj mobilnih aplikacij",
+  "fieldFiveDescription": "Razvijamo visoko zmogljive, intuitivne mobilne aplikacije za iOS in Android, prilagojene za zagotavljanje najboljše uporabniške izkušnje.",
+
+  "fieldSixTitle": "Oblikovanje",
+  "fieldSixDescription": "Naša ekipa za oblikovanje združuje estetiko z funkcionalnostjo, ustvarjajoč osupljive dizajne, ki učinkovito komunicirajo in privabljajo občinstvo.",
+
+  "bookCallTitle": "Pogovorimo se o rešitvah",
+  "bookCallDescription": "Pripravljeni na dvig vaše digitalne prisotnosti? Načrtujte klic z nami, da raziščemo, kako lahko preobrazimo vašo spletno strategijo.",
+  "bookCallCtaLabel": "Načrtujte vaš klic zdaj",
+
+  "ourServicesPreTitle": "NAŠE STORITVE",
+  "ourServicesTitle": "Prilagojene digitalne rešitve za vsako potrebo",
+  "ourServicesDescription": "V Inno Web rešitvah razumemo, da ima vsaka stranka edinstvene potrebe. Zato ponujamo širok spekter digitalnih storitev, vsaka prilagodljiva za vaše specifične zahteve. Naša ekipa združuje tehnično strokovnost z ustvarjalnim pristopom, da dostavi rešitve, ki ne le izpolnjujejo, ampak presegajo pričakovanja. Ne glede na to, ali želite začeti od začetka, prenoviti obstoječo platformo ali izboljšati vašo spletno prisotnost, smo tu za vas.",
+  "ourServicesListItem1": "Prilagojen spletni razvoj: Prilagojene spletne strani, ki združujejo estetiko z funkcionalnostjo, izpolnjujejo edinstvene poslovne potrebe.",
+  "ourServicesListItem2": "Razvoj mobilnih aplikacij: Uporabniško osredotočene mobilne aplikacije za iOS in Android, optimizirane za zmogljivost in enostavno uporabo.",
+  "ourServicesListItem3": "SEO in digitalni marketing: Učinkovite SEO in marketinške strategije za povečanje spletne prisotnosti in angažiranosti.",
+  "ourServicesListItem4": "E-trgovinske rešitve: Varna, uporabniku prijazna e-trgovinska platforma za izboljšano spletno nakupovalno izkušnjo.",
+
+  "testimonialsPreTitle": "PRIČEVANJA",
+  "testimonialsTitle": "Zgodbe o uspehu strank",
+  "testimonialsDescription": "V Inno Web rešitvah smo ponosni na močne odnose, ki smo jih zgradili s svojimi strankami. Njihove zgodbe o uspehu so pričevanje naši zavezanosti odličnosti v digitalnih rešitvah. Tukaj je, kaj nekateri naši cenjeni stranki pravijo o svojih izkušnjah z nami.",
+
+  "testimonial1Name": "Dušan Antonijević",
+  "testimonial1JobTitle": "Lastnik Medisoft",
+  "testimonial1Description": "Inno Web rešitve so bile ključne pri ustvarjanju naše SAAS rešitve za pristajalno stran. Njihova strokovnost v oblikovanju in uporabniški izkušnji nam je pomagala učinkovito komunicirati vrednost našega izdelka, kar je privedlo do povečanega angažiranja in konverzij.",
+
+  "testimonial2Name": "Nikola Novaković",
+  "testimonial2JobTitle": "Lastnik Easy Invoice",
+  "testimonial2Description": "Profesionalnost in tehnična spretnost podjetja Inno Web Solutions sta preoblikovali način, kako upravljamo s fakturiranjem. Razvoj naše aplikacije za fakturiranje je poenostavil naše procese, izboljšal učinkovitost in zadovoljstvo uporabnikov.",
+
+  "testimonial3Name": "Lazar Plazinić",
+  "testimonial3JobTitle": "Lastnik SmileFlex",
+  "testimonial3Description": "Sodelovanje z Inno Web Solutions pri razvoju naše spletne trgovine je bilo prelomno. Njihova ekipa je dostavila intuitivno, uporabniku prijazno platformo, ki je bistveno povečala naše prodaje in doseg strank. Njihova strokovnost na področju e-trgovine je resnično brez primerjave.",
+
+  "footerCallUs": "Pokličite nas",
+  "footerEmailUs": "Pišite nam",
+  "footerFindUs": "Najdite nas",
+
+  "formTitle": "Pošljite nam sporočilo",
+  "formFullNamePlaceholder": "Polno ime",
+  "formEmailPlaceholder": "E-pošta",
+  "formMessagePlaceholder": "Sporočilo",
+  "formCtaLabel": "Pošlji sporočilo",
+
+  "copyRight": "Vse pravice pridržane ©{year} Inno Web Solutions.",
+
+  "navLabel1": "Domov",
+  "navLabel2": "Kdo smo",
+  "navLabel3": "Naša področja",
+  "navLabel4": "Naše storitve",
+  "navLabel5": "Pričevanja",
+  "navLabel6": "Naročite klic"
 }
