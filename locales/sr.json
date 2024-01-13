@@ -71,9 +71,9 @@
   "footerFindUs": "Pronađite nas",
 
   "formTitle": "Pišite nam poruku",
-  "formFullNamePlaceholder": "Puno ime",
-  "formEmailPlaceholder": "E-mail",
-  "formMessagePlaceholder": "Poruka",
+  "formFullNamePlaceholder": "Molim vas unesite puno ime",
+  "formEmailPlaceholder": "Molim vas unesite vas e-mail",
+  "formMessagePlaceholder": "Napisite nam poruku",
   "formCtaLabel": "Pošalji poruku",
 
   "copyRight": "Sva prava zadržana ©{year} Inno Web Solutions.",

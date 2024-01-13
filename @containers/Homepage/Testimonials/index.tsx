@@ -119,6 +119,7 @@ const ContentWrap = styled.div`
   ${({ theme: { breakpoints, spaces } }) => css`
     @media (max-width: ${breakpoints.md}px) {
       margin: ${spaces[3]}px 0;
+      order: 1;
     }
   `}
 `;
@@ -127,6 +128,12 @@ const Testimonials = styled.div`
   display: flex;
   flex-direction: column;
   flex: 0 0 50%;
+
+  ${({ theme: { breakpoints, spaces } }) => css`
+    @media (max-width: ${breakpoints.md}px) {
+      order: 2;
+    }
+  `}
 `;
 
 const Testimonial = styled.div`

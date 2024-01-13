@@ -11,8 +11,8 @@ export const contactUs = async (formData: FormData) => {
 
   resend.emails.send({
     from: "onboarding@resend.dev",
-    to: "dusanantonijevic2404@gmail.com",
-    subject: "Medisoft Quotation",
+    to: "smiljanicjovan9@gmail.com",
+    subject: "Inno Web Contact Us",
     text: `Hello, ${fullName} has requested a quotation! \n\n  Email: ${email} \n Message: ${message} `,
   });
 };

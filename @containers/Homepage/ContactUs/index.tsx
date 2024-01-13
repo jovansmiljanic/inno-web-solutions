@@ -11,6 +11,10 @@ import { contactUs } from "@utils";
 import { useTranslations } from "next-intl";
 import styled, { css } from "styled-components";
 
+// Local components
+import { Boxes } from "./Boxes";
+import { Input, TextArea } from "@styles/Form";
+
 const Container = styled.div`
   ${({ theme: { colors, spaces } }) => css`
     background-color: ${colors.white};
@@ -26,79 +30,35 @@ const Wrapper = styled.div`
   flex-direction: column;
 `;
 
-const Boxes = styled.div`
-  display: flex;
-`;
-
-const Box = styled.div`
-  flex: 0 0 33.333%;
-`;
-
 const Form = styled.form`
-  button {
-    height: 100%;
-  }
+  display: flex;
+  justify-content: space-between;
+
+  padding: 20px;
+  border-radius: 10px;
+
+  ${({ theme: { colors, breakpoints } }) => css`
+    background-color: ${colors.background};
+
+    @media (max-width: ${breakpoints.md}px) {
+      flex-direction: column;
+    }
+  `}
 `;
 
 const FormWrap = styled.div`
   display: flex;
   justify-content: space-between;
-
   align-items: center;
   flex-wrap: wrap;
+  flex: 0 0 50%;
 
-  width: 50%;
-`;
-
-const Input = styled.input`
-  padding: 9px 20px;
-  border-radius: 5px;
-  margin-right: 10px;
-  background-color: transparent;
   width: 100%;
-
-  ${({ theme: { colors, breakpoints } }) => css`
-    border: 1px solid ${colors.textColorPrimary};
-
-    &::placeholder {
-      font-family: "Poppins", sans-serif;
-      font-size: 15px;
-      font-weight: 600;
-      color: ${colors.textColorPrimary};
-    }
-
-    @media (max-width: ${breakpoints.md}px) {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  `}
 `;
 
-const TextArea = styled.textarea`
-  padding: 9px 20px;
-  border-radius: 5px;
-  margin-right: 10px;
-  background-color: transparent;
-  width: 100%;
-
-  ${({ theme: { colors, breakpoints } }) => css`
-    border: 1px solid ${colors.textColorPrimary};
-
-    &::placeholder {
-      font-family: "Poppins", sans-serif;
-      font-size: 15px;
-      font-weight: 600;
-      color: ${colors.textColorPrimary};
-    }
-
-    @media (max-width: ${breakpoints.md}px) {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  `}
+const Wrap = styled.div`
+  flex: 0 0 45%;
 `;
-
-const FormHead = styled.div``;
 
 const index: FC = () => {
   const t = useTranslations();
@@ -106,34 +66,7 @@ const index: FC = () => {
   return (
     <Container>
       <Wrapper>
-        <Boxes>
-          <Box>
-            <Heading as="h4" $weight="bold">
-              {t("footerCallUs")}
-            </Heading>
-            <Heading as="h6" color="textColorSecondary">
-              +386 30 760 375
-            </Heading>
-          </Box>
-
-          <Box>
-            <Heading as="h4" $weight="bold">
-              {t("footerEmailUs")}
-            </Heading>
-            <Heading as="h6" color="textColorSecondary">
-              info@inno-web.solutions
-            </Heading>
-          </Box>
-
-          <Box>
-            <Heading as="h4" $weight="bold">
-              {t("footerFindUs")}
-            </Heading>
-            <Heading as="h6" color="textColorSecondary">
-              Martina Krapan 18, 1000, Ljubljana
-            </Heading>
-          </Box>
-        </Boxes>
+        <Boxes />
 
         <Form
           action={async formData => {
@@ -144,7 +77,35 @@ const index: FC = () => {
             }, 2000);
           }}
         >
-          <FormHead>{t("formTitle")}</FormHead>
+          <Wrap>
+            <Heading
+              as="h1"
+              $weight="bold"
+              $padding={{
+                xs: { bottom: 3 },
+                sm: { bottom: 3 },
+                md: { bottom: 3 },
+              }}
+            >
+              Connect with Us for Digital Excellence
+            </Heading>
+
+            <Heading
+              as="h6"
+              color="textColorSecondary"
+              $padding={{
+                xs: { bottom: 2 },
+                sm: { bottom: 2 },
+                md: { bottom: 0 },
+              }}
+            >
+              Ready to transform your digital vision into reality? Our team
+              specializes in creating outstanding digital experiences, from
+              engaging websites to innovative marketing strategies. Reach out
+              through the form and let's discuss how we can help your project
+              shine. Your digital journey starts here!
+            </Heading>
+          </Wrap>
 
           <FormWrap>
             <Input
@@ -165,10 +126,10 @@ const index: FC = () => {
               name="message"
               placeholder={t("formMessagePlaceholder")}
               required
+              rows={5}
             />
+            <Button $variant="black">{t("formCtaLabel")}</Button>
           </FormWrap>
-
-          <Button $variant="primary">{t("formCtaLabel")}</Button>
         </Form>
       </Wrapper>
     </Container>

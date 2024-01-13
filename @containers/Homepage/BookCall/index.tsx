@@ -25,7 +25,15 @@ const index: FC = () => {
           {t("bookCallDescription")}
         </Heading>
 
-        <Button $variant="black">{t("bookCallCtaLabel")}</Button>
+        <Button
+          $variant="black"
+          as="a"
+          href="https://calendly.com/inno-web-solutions/inno-web-solutions"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {t("bookCallCtaLabel")}
+        </Button>
       </Wrapper>
     </Container>
   );

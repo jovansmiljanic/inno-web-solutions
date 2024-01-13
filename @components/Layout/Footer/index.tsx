@@ -30,20 +30,10 @@ const index: FC = () => {
             as="p"
             $weight="regular"
             color="textColorSecondary"
-            $textAlign={{ xs: "center", sm: "center", md: "center" }}
+            $textAlign={{ xs: "center", sm: "center", md: "right" }}
           >
             {t("copyRight", { year })}
           </Heading>
-        </Column>
-
-        <Column>
-          <Links>
-            <Link href="#home">{t("navLabel1")}</Link>
-            <Link href="#services">{t("navLabel2")}</Link>
-            <Link href="#about-us">{t("navLabel3")}</Link>
-            <Link href="#our-benefits">{t("navLabel4")}</Link>
-            <Link href="#app-integration">{t("navLabel5")}</Link>
-          </Links>
         </Column>
       </Main>
     </Footer>
@@ -82,7 +72,7 @@ const Main = styled.div`
 `;
 
 const Column = styled.div`
-  flex: 0 0 30%;
+  flex: 0 0 50%;
 
   ${({ theme: { breakpoints, spaces } }) => css`
     @media (max-width: ${breakpoints.md}px) {

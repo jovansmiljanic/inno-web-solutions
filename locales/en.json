@@ -71,9 +71,9 @@
   "footerFindUs": "Find us",
 
   "formTitle": "Write us a message",
-  "formFullNamePlaceholder": "Full name",
-  "formEmailPlaceholder": "Email",
-  "formMessagePlaceholder": "Message",
+  "formFullNamePlaceholder": "Please enter your full name",
+  "formEmailPlaceholder": "Please enter your email address",
+  "formMessagePlaceholder": "Write us a message",
   "formCtaLabel": "Send Message",
 
   "copyRight": "Copyright ©{year} Inno Web Solutions. All rights reserved.",

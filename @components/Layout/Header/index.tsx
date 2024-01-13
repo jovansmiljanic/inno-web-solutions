@@ -35,41 +35,59 @@ const index: FC = () => {
   }, [isTablet]);
 
   return (
-    <Header>
-      <Link href="/">
-        <Logo src="/logo.png" alt="" />
-      </Link>
+    <Wrapper>
+      <Header>
+        <Link href="/">
+          <Logo src="/logo.png" alt="" />
+        </Link>
 
-      {!isTablet && (
-        <Nav>
-          <Link href="#home">{t("navLabel1")}</Link>
-          <Link href="#about-us">{t("navLabel2")}</Link>
-          <Link href="#our-fields">{t("navLabel3")}</Link>
-          <Link href="#our-services">{t("navLabel4")}</Link>
-          <Link href="#testimonials">{t("navLabel5")}</Link>
+        {!isTablet && (
+          <Nav>
+            <Link href="#home">{t("navLabel1")}</Link>
+            <Link href="#about-us">{t("navLabel2")}</Link>
+            <Link href="#our-fields">{t("navLabel3")}</Link>
+            <Link href="#our-services">{t("navLabel4")}</Link>
+            <Link href="#testimonials">{t("navLabel5")}</Link>
 
-          <Button
-            $variant="textColorPrimary"
-            size="small"
-            as="a"
-            href="#book-a-call"
-          >
-            {t("navLabel6")}
-          </Button>
-        </Nav>
-      )}
+            <Button
+              $variant="textColorPrimary"
+              size="small"
+              as="a"
+              href="#book-a-call"
+            >
+              {t("navLabel6")}
+            </Button>
+          </Nav>
+        )}
 
-      {isTablet && (
-        <>
-          <Navigation toggled={toggled} />
-          <Toggler onClick={() => setToggle(!toggled)} />
-        </>
-      )}
-    </Header>
+        {isTablet && (
+          <>
+            <Navigation toggled={toggled} />
+            <Toggler onClick={() => setToggle(!toggled)} />
+          </>
+        )}
+      </Header>
+    </Wrapper>
   );
 };
 
 export { index as Header };
+
+const Wrapper = styled.div`
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: saturate(180%) blur(10px);
+
+  ${({ theme: { breakpoints } }) => css`
+    @media (max-width: ${breakpoints.md}px) {
+      background: white;
+      backdrop-filter: unset;
+    }
+  `}
+`;
 
 const Header = styled.div`
   position: relative;

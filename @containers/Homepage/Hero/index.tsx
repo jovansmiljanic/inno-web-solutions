@@ -16,7 +16,7 @@ const index: FC = () => {
 
   return (
     <Wrapper>
-      <Header />
+      {/* <Header /> */}
 
       <Hero id="home">
         <ContentWrap>
@@ -66,7 +66,7 @@ const Hero = styled.div`
   align-items: center;
 
   ${({ theme: { breakpoints, spaces } }) => css`
-    padding: ${spaces[10]}px ${spaces[3]}px;
+    padding: ${spaces[1]}rem ${spaces[3]}px ${spaces[10]}px ${spaces[3]}px;
 
     @media (max-width: ${breakpoints.md}px) {
       flex-direction: column;
