@@ -9,13 +9,13 @@
   "aboutUsCtaLabel": "Istražite našu stručnost",
 
   "aboutUsBox1Title": "20+",
-  "aboutUsBox1Description": "Svaki projekat, od elegantnih veb stranica do korisnički prijateljskih aplikacija, odražava našu posvećenost kvalitetu i zadovoljstvu klijenata.",
+  "aboutUsBox1Description": "Svaki projekat, od elegantnih veb stranica do korisnički aplikacija, odražava našu posvećenost kvalitetu i zadovoljstvu klijenata.",
 
   "aboutUsBox2Title": "95%",
   "aboutUsBox2Description": "Postizanje stope zadovoljstva klijenata od 95%, posvećeni smo premašivanju očekivanja u svakom projektu.",
 
-  "aboutUsBox3Title": "250%",
-  "aboutUsBox3Description": "Klijenti doživljavaju prosečan rast prihoda od 250% sa našim prilagođenim digitalnim rešenjima, naglašavajući naš uticajan rad.",
+  "aboutUsBox3Title": "150%",
+  "aboutUsBox3Description": "Klijenti doživljavaju prosečan rast prihoda od 150% sa našim prilagođenim digitalnim rešenjima, naglašavajući naš uticajan rad.",
 
   "ourFieldsPreTitle": "NAŠA PODRUČJA",
   "ourFieldsTitle": "Ekspertiza širom digitalnog spektra",
@@ -39,8 +39,8 @@
   "fieldSixDescription": "Naš tim za dizajn kombinuje estetiku sa funkcionalnošću, stvarajući izuzetne dizajne koji efikasno komuniciraju i angažuju publiku.",
 
   "bookCallTitle": "Hajde da razgovaramo o rešenjima",
-  "bookCallDescription": "Spremni da unapredite svoje digitalno prisustvo? \n Zakazite poziv sa nama kako biste istražili kako možemo transformisati vašu online strategiju.",
-  "bookCallCtaLabel": "Zakažite vaš poziv odmah",
+  "bookCallDescription": "Spremni da unapredite svoje digitalno prisustvo? \n Zakažite poziv sa nama kako biste istražili kako možemo transformisati vašu online strategiju.",
+  "bookCallCtaLabel": "Zakažite vaš termin odmah",
 
   "ourServicesPreTitle": "NAŠE USLUGE",
   "ourServicesTitle": "Prilagođena digitalna rešenja za svaku potrebu",
@@ -70,7 +70,9 @@
   "footerEmailUs": "Pišite nam",
   "footerFindUs": "Pronađite nas",
 
-  "formTitle": "Pišite nam poruku",
+  "formTitle": "Povežite se sa nama za digitalnu izvrsnost",
+  "formDescription": "Spremni da transformišete vašu digitalnu viziju u stvarnost? Naš tim se specijalizuje u kreiranju izvanrednih digitalnih iskustava, od privlačnih veb sajtova do inovativnih marketinških strategija. Javite se preko formulara i hajde da razgovaramo o tome kako možemo pomoći vašem projektu da zablista. Vaše digitalno putovanje počinje ovde!",
+
   "formFullNamePlaceholder": "Molim vas unesite puno ime",
   "formEmailPlaceholder": "Molim vas unesite vas e-mail",
   "formMessagePlaceholder": "Napisite nam poruku",

@@ -59,7 +59,11 @@ const index: FC = () => {
                       {testimonial.name}
                     </Heading>
 
-                    <Heading as="p" color="textColorSecondary">
+                    <Heading
+                      as="p"
+                      color="textColorSecondary"
+                      $weight="regular"
+                    >
                       {testimonial.designation}
                     </Heading>
                   </NameWrap>
@@ -78,6 +82,7 @@ const index: FC = () => {
             <Heading
               as="h6"
               color="textColorSecondary"
+              $weight="regular"
               $padding={{ md: { bottom: 2 } }}
             >
               {t("testimonialsDescription")}

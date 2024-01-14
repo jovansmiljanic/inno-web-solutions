@@ -36,10 +36,10 @@ const Form = styled.form`
   display: flex;
   justify-content: space-between;
 
-  padding: 20px;
   border-radius: 10px;
 
   ${({ theme: { colors, breakpoints } }) => css`
+    padding: 40px 20px;
     background-color: ${colors.background};
 
     @media (max-width: ${breakpoints.md}px) {
@@ -89,23 +89,20 @@ const index: FC = () => {
                 md: { bottom: 3 },
               }}
             >
-              Connect with Us for Digital Excellence
+              {t("formTitle")}
             </Heading>
 
             <Heading
               as="h6"
               color="textColorSecondary"
+              $weight="regular"
               $padding={{
                 xs: { bottom: 2 },
                 sm: { bottom: 2 },
                 md: { bottom: 0 },
               }}
             >
-              Ready to transform your digital vision into reality? Our team
-              specializes in creating outstanding digital experiences, from
-              engaging websites to innovative marketing strategies. Reach out
-              through the form and let's discuss how we can help your project
-              shine. Your digital journey starts here!
+              {t("formDescription")}
             </Heading>
           </Wrap>
 

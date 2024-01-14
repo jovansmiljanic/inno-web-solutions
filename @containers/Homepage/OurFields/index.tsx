@@ -113,7 +113,7 @@ const index: FC = () => {
 
               <Heading
                 as="h5"
-                $weight="bold"
+                $weight="medium"
                 $padding={{
                   xs: { top: 1, bottom: 1 },
                   sm: { top: 1, bottom: 1 },
@@ -123,7 +123,9 @@ const index: FC = () => {
                 {field.title}
               </Heading>
 
-              <Heading as="h6">{field.description}</Heading>
+              <Heading as="h6" color="textColorSecondary" $weight="regular">
+                {field.description}
+              </Heading>
             </Field>
           ))}
         </FieldsWrap>

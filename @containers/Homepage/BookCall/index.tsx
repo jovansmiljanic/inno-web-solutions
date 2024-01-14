@@ -21,6 +21,8 @@ const index: FC = () => {
         <Heading
           as="h6"
           $padding={{ xs: { bottom: 2 }, sm: { bottom: 2 }, md: { bottom: 2 } }}
+          $weight="regular"
+          color="textColorSecondary"
         >
           {t("bookCallDescription")}
         </Heading>

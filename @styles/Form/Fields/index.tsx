@@ -14,7 +14,7 @@ export const Input = styled.input`
     &::placeholder {
       font-family: "Poppins", sans-serif;
       font-size: 15px;
-      font-weight: 600;
+      font-weight: 400;
       color: ${colors.textColorSecondary};
     }
 
@@ -39,7 +39,7 @@ export const TextArea = styled.textarea`
     &::placeholder {
       font-family: "Poppins", sans-serif;
       font-size: 15px;
-      font-weight: 600;
+      font-weight: 400;
       color: ${colors.textColorSecondary};
     }
 

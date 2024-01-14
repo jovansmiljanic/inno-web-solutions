@@ -46,6 +46,7 @@ const index: FC = () => {
             <Heading
               as="h6"
               color="textColorSecondary"
+              $weight="regular"
               $padding={{
                 xs: { bottom: 2 },
                 sm: { bottom: 2 },
@@ -65,7 +66,8 @@ const index: FC = () => {
           {aboutUs.map((item, index) => (
             <Item key={index}>
               <Title>{item.title}</Title>
-              <Heading as="h6" $weight="semiBold">
+
+              <Heading as="h6" color="textColorSecondary" $weight="regular">
                 {item.description}
               </Heading>
             </Item>

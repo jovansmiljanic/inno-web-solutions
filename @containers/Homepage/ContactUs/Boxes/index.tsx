@@ -57,7 +57,7 @@ const index: FC<IBoxes> = () => {
         </Heading>
 
         <Link href="tel:+386 30 760 375">
-          <Heading as="h6" color="textColorSecondary">
+          <Heading as="h6" color="textColorSecondary" $weight="regular">
             +386 30 760 375
           </Heading>
         </Link>
@@ -77,7 +77,7 @@ const index: FC<IBoxes> = () => {
         </Heading>
 
         <Link href="mailto:info@inno-web.solutions">
-          <Heading as="h6" color="textColorSecondary">
+          <Heading as="h6" color="textColorSecondary" $weight="regular">
             info@inno-web.solutions
           </Heading>
         </Link>
@@ -95,7 +95,7 @@ const index: FC<IBoxes> = () => {
         >
           {t("footerFindUs")}
         </Heading>
-        <Heading as="h6" color="textColorSecondary">
+        <Heading as="h6" color="textColorSecondary" $weight="regular">
           Martina Krapan 18, 1000, Ljubljana
         </Heading>
       </Box>

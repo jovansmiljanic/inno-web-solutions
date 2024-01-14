@@ -76,6 +76,7 @@ const index: FC = () => {
             <Heading
               as="h6"
               color="textColorSecondary"
+              $weight="regular"
               $padding={{
                 xs: { bottom: 2 },
                 sm: { bottom: 2 },
