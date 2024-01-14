@@ -147,7 +147,7 @@ const Nav = styled.div`
 
   ${({ theme: { colors } }) => css`
     a {
-      padding-right: 15px;
+      padding-right: 35px;
       color: ${colors.textColorPrimary};
 
       &:last-child {
