@@ -8,6 +8,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import styled, { css } from "styled-components";
+import { Button } from "@components";
 
 interface Navigation {
   toggled: boolean;
@@ -35,11 +36,10 @@ const index: FC<Navigation> = ({ toggled }) => {
 
         <Links>
           <Link href="#home">{t("navLabel1")}</Link>
-          <Link href="#our-services">{t("navLabel2")}</Link>
-          <Link href="#about-us">{t("navLabel3")}</Link>
-          <Link href="#our-benefits">{t("navLabel4")}</Link>
-          <Link href="#our-benefits">{t("navLabel5")}</Link>
-          <Link href="#app-integration">{t("navLabel6")}</Link>
+          <Link href="#about-us">{t("navLabel2")}</Link>
+          <Link href="#our-fields">{t("navLabel3")}</Link>
+          <Link href="#our-services">{t("navLabel4")}</Link>
+          <Link href="#testimonials">{t("navLabel5")}</Link>
         </Links>
       </MobileHeader>
     </Navigation>
@@ -75,6 +75,10 @@ const Navigation = styled(motion.div)`
     a {
       color: ${colors.textColorPrimary};
       padding: 10px 0;
+    }
+
+    @media (min-width: ${breakpoints.md}px) {
+      display: none;
     }
   `}
 `;

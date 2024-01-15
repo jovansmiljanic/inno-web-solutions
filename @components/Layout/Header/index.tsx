@@ -4,7 +4,7 @@
 import type { FC } from "react";
 
 // Core
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 
 // Store context
 import { StoreContext } from "@context";
@@ -26,73 +26,114 @@ const index: FC = () => {
   // Translations
   const t = useTranslations();
 
-  const { isTablet } = useContext(StoreContext);
+  // Ref for the dropdown container
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const [toggled, setToggle] = useState<boolean>(true);
+  // State for managing dropdown visibility
+  const [isDropdownVisible, setDropdownVisible] = useState<boolean>(false);
 
+  // Handle click outside of dropdown
+  const handleClickOutside = (event: MouseEvent) => {
+    if (
+      dropdownRef.current &&
+      !dropdownRef.current.contains(event.target as Node)
+    ) {
+      setDropdownVisible(false);
+    }
+  };
+
+  // Attach event listener for outside clicks
   useEffect(() => {
-    setToggle(!isTablet);
-  }, [isTablet]);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const [scroll, setScroll] = useState(false);
+
+  // Handle scroll event
+  useEffect(() => {
+    const handleScroll = () => {
+      setScroll(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const closeDropdown = () => setDropdownVisible(false);
 
   return (
-    <Wrapper>
+    <Wrapper $isScrolled={scroll}>
       <Header>
         <Link href="/">
           <Logo src="/logo.png" alt="" />
         </Link>
 
-        {!isTablet && (
-          <Nav>
-            <Link href="#home">{t("navLabel1")}</Link>
-            <Link href="#about-us">{t("navLabel2")}</Link>
-            <Link href="#our-fields">{t("navLabel3")}</Link>
-            <Link href="#our-services">{t("navLabel4")}</Link>
-            <Link href="#testimonials">{t("navLabel5")}</Link>
+        <Nav>
+          <Link href="#home">{t("navLabel1")}</Link>
+          <Link href="#about-us">{t("navLabel2")}</Link>
+          <Link href="#our-fields">{t("navLabel3")}</Link>
+          <Link href="#our-services">{t("navLabel4")}</Link>
+          <Link href="#testimonials">{t("navLabel5")}</Link>
 
-            <Button
-              $variant="textColorPrimary"
-              size="small"
-              as="a"
-              href="#book-a-call"
-            >
-              {t("navLabel6")}
-            </Button>
-          </Nav>
-        )}
-
-        {isTablet && (
-          <>
-            <Navigation toggled={toggled} />
-            <Toggler onClick={() => setToggle(!toggled)} />
-          </>
-        )}
+          <Button
+            $variant="textColorPrimary"
+            size="small"
+            as="a"
+            href="#book-a-call"
+          >
+            {t("navLabel6")}
+          </Button>
+        </Nav>
       </Header>
+
+      <div ref={dropdownRef}>
+        {isDropdownVisible && (
+          <Wrap onClick={closeDropdown}>
+            <Navigation toggled={isDropdownVisible} />
+          </Wrap>
+        )}
+
+        <Toggler onClick={() => setDropdownVisible(!isDropdownVisible)} />
+      </div>
     </Wrapper>
   );
 };
 
 export { index as Header };
 
-const Wrapper = styled.div`
+const Wrap = styled.div`
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9;
+`;
+
+const Wrapper = styled.div<{ $isScrolled: boolean }>`
   width: 100%;
   position: fixed;
   z-index: 100;
 
-  background: rgba(255, 255, 255, 0.72);
-  backdrop-filter: saturate(180%) blur(10px);
+  ${({ $isScrolled, theme: { colors, breakpoints } }) => css`
+    background: ${colors.white};
 
-  ${({ theme: { breakpoints } }) => css`
+    ${$isScrolled &&
+    css`
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: saturate(180%) blur(10px);
+    `}
+
     @media (max-width: ${breakpoints.md}px) {
-      background: white;
+      background: ${colors.white};
       backdrop-filter: unset;
     }
   `}
 `;
 
 const Header = styled.div`
-  position: relative;
-  z-index: 100;
-
   max-width: 1340px;
   margin: auto;
   padding: 20px;
@@ -130,9 +171,13 @@ const Toggler = styled.div`
     transform: translateY(50%);
   }
 
-  ${({ theme: { colors } }) => css`
+  ${({ theme: { colors, breakpoints } }) => css`
     border-top: 2px solid ${colors.black};
     border-bottom: 2px solid ${colors.black};
+
+    @media (min-width: ${breakpoints.md}px) {
+      display: none;
+    }
 
     &:before {
       background-color: ${colors.black};
@@ -145,14 +190,20 @@ const Nav = styled.div`
   justify-content: flex-end;
   align-items: center;
 
-  ${({ theme: { colors } }) => css`
+  ${({ theme: { colors, breakpoints } }) => css`
     a {
       padding-right: 35px;
       color: ${colors.textColorPrimary};
 
       &:last-child {
         color: ${colors.white};
+        padding-right: 20px;
+        padding-left: 20px;
       }
+    }
+
+    @media (max-width: ${breakpoints.md}px) {
+      display: none;
     }
   `}
 `;
