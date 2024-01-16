@@ -8,6 +8,9 @@ export const Input = styled.input`
   width: 100%;
   margin-bottom: 20px;
 
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
   ${({ theme: { colors, breakpoints } }) => css`
     border: 1px solid ${colors.textColorSecondary};
 
@@ -32,6 +35,9 @@ export const TextArea = styled.textarea`
   background-color: transparent;
   width: 100%;
   margin-bottom: 10px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
   ${({ theme: { colors, breakpoints } }) => css`
     border: 1px solid ${colors.textColorSecondary};
